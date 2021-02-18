@@ -9,11 +9,11 @@ class Program
         //{
         //    Console.WriteLine(c);
         //}
-        
-        Console.WriteLine("OUT WHILE");
-        int n = int.Parse(Console.ReadLine()); ;
-        while (n != 0)
+        //Console.WriteLine("OUT WHILE");
+        int n = 1;
+        while (n!=0)
         {
+            n = int.Parse(Console.ReadLine());
             for (int x = 1; x <= n; x++)
             {
                 Console.WriteLine("entered for x = " + x);
@@ -69,15 +69,16 @@ class Program
 
                         }
                         break;
-                    default:
+                    case "0":
                             n = 0;
                         break;
                 }
             }
-            foreach (char c in chr32)
-            {
-                Console.Write(c);
-            }
+            //foreach (char c in chr32)
+            //{
+            //    Console.Write(c);
+            //}
+            Console.WriteLine("Out of Switch");
         }
     }
 }
